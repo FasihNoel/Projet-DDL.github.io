@@ -1,0 +1,349 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .body{
+    max-width: 1440px;
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    width: 100%;
+    max-width: 1440px;
+    height: 162px;
+    background: #dbd8d0;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    font-family: 'Jomolhari', serif;
+  }
+
+  .logo-container{
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    max-width: 154px;
+    max-height: 117px;
+    background: url(photo.logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity: 1;
+    position: absolute;
+    left: 6px;
+    overflow: hidden;
+  }
+
+  .name {
+    font-size: clamp(28px, 2vw, 33px);
+    max-width: 464px;
+    margin-left: 151px;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    align-items: center;
+    white-space: nowrap; 
+    color: #000000;
+  }
+
+  .menu-list{
+    list-style: none;
+    display: flex;
+    gap: 45px;
+    margin: 0;
+    padding: 0; 
+  }
+
+  .menu-container{
+    margin-left: auto;
+    margin-right: 40px;
+  }
+
+ .menu-list li{
+  position: relative;
+ }
+
+ .menu-list a{
+  text-decoration: none;
+  font-size: clamp (12px, 2vw, 18px);
+  text-transform: uppercase;
+  color: #000000;
+ }
+
+ .menu-list li:hover::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 100%;
+  height: 4px;
+  background-color: #8A8A84;
+  border-radius: 3.5px;
+  transition: height 0.3s ease;
+  height: 3.5px;
+ }
+
+.propos-container{
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  }
+
+
+ .frame1{
+  width: 51%;
+  max-width: 721px;
+  height: 529px;
+  padding: 131px 141px 131px 97px;
+  justify-content: flex-start;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+ }
+
+ .propos{
+  max-width: 483px;
+  align-self: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: inline-flex;
+ }
+
+ .ddc{
+  align-self: stretch;
+  color: #000000;
+  font-size: clamp(22px, 2vw, 26px);
+  text-transform: uppercase;
+  font-family: 'Josefin Sans';
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  margin-bottom: 30px;
+ }
+
+ .fondation{
+  max-width: 421px;
+  height: 131px;
+  color: #000000;
+  font-size: clamp(16px, 2vw, 20px);
+  font-family: 'Josefin Sans';
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  word-wrap: break-word;
+  margin-bottom: 30px;
+ }
+
+ .decouvrir{
+  width: 207px;
+  height: 50px;
+  padding: 12px 24px;
+  background-color: #dbd8d0;
+  border: none;
+  text-align: center;
+  color: #000000;
+  font-size: clamp(16px, 2vw, 20px);
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  cursor: pointer; 
+  justify-content: center;
+  align-items: center;
+  display: inline-flex;
+  transition: background-color 0.3s ease;
+  margin-top:20px;
+ }
+
+ .decouvrir:hover{
+  background-color: #ffffff;
+  border: #dbd8d0 3.5px solid;
+  transform: scale(1.1);
+ }
+
+ .frame2{
+  width: 49%;
+  max-width: 719px;
+  height: 529px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-image: url('galerie.png'); 
+  background-size: cover; 
+  background-position: center;
+  box-sizing: border-box;
+ }
+
+.line{
+  max-width: 1346px;
+  margin: 61px auto;
+  width: calc(100% - 134px);
+}
+
+.line hr{
+  border: none;
+  height: 1px;
+  background-color: #dbd8d0;
+  width: 100%;
+}
+
+.line1{
+  max-width: 1346px;
+  margin: 0 auto;
+  width: calc(100% - 134px);
+}
+
+.line1 hr{
+  border: none;
+  height: 1.5px;
+  background-color: #dbd8d0;
+  width: 100%;
+}
+
+.oeuvres {
+  max-width: 1440px;
+  position: relative;
+  font-family: 'Josefin Sans';
+  letter-spacing: 0.1em;
+  height: 691px;
+  margin: 0 auto;
+}
+
+.artistes{
+  max-width: 1440px;
+  position: relative;
+  font-family: 'Josefin Sans';
+  letter-spacing: 0.1em;
+  height: 691px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 40px;
+  text-align: center;
+  margin: 69px 0 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.gallery-item img{
+  width: 100%;
+  max-width: 376px;
+  max-height: 337px;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.gallery-item .nom{
+  font-size: clamp(18px, 2vw, 24px);
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 22px;
+}
+
+.gallery-item .artist{
+  font-size: clamp(16px, 2vw, 20px);
+  font-weight: 300;
+  padding-top: 13px;
+}
+
+.oeuvres-slider {
+  width: 100%;
+  height: 420px; 
+  overflow: hidden;
+  position: relative;
+}
+
+.artistes-slider {
+  width: 100%;
+  height: 416px; 
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  flex-direction: column;
+  transition: transform 1.5s linear;
+}
+
+.slide {
+  display: none;
+  justify-content: space-around;
+  width: 100%;
+  height: 416px; 
+  gap: 10px;
+}
+
+.slide.active {
+  display: flex;
+  }
+
+.slide1 {
+  display: none;
+  justify-content: space-around;
+  width: 100%;
+  height: 416px; 
+  gap: 10px;
+}
+
+.slide1.active {
+  display: flex;
+}
+
+.dots {
+  text-align: center;
+  position: absolute;
+  margin-top: 140px;
+  right: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dot {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: #DBD8D0;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.dot.active {
+  background-color: #8A8A84;
+}
+
+.dots1 {
+  text-align: center;
+  position: absolute;
+  margin-top: 140px;
+  right: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.dot1 {
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  background-color: #DBD8D0;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.dot1.active {
+  background-color: #8A8A84;
+}
