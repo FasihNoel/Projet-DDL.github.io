@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dedal des couleurs</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap">
+        <link href="https://fonts.googleapis.com/css2?family=Jomolhari&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="siteweb.css" type="text/css">
+    </head>
+    
+    <body>
+        <header class="header">
+            <div class="logo-container">
+                <img src="photo.logo.png" alt="Logo" class="logo">
+                <h2 class="name">dedal des couleurs</h2>
+            </div>
+
+            <div class="menu-container">
+                <nav class="menu">
+                    <ul class="menu-list">
+                        <li><a href="#oeuvres">oeuvres</a></li>
+                        <li><a href="#artistes">artistes</a></li>
+                        <li><a href="#évènements">évènements</a></li>
+                        <li><a href="#contact">contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="propos-container">
+            <div class="frame1">
+                <div class="propos">
+                    <div class="ddc">dedal des couleurs</div>
+                    <div class="fondation">Depuis sa fondation, notre galerie d’art contemporain met en avant des artistes locaux et internationaux<br><br>Elle propose des expositions dont la mission est d'inspirer et d'offrir une nouvelle perspective sur l’art</div>
+                    <button class="decouvrir">Découvrir</button>
+                </div>
+            </div>
+
+            <div class="frame2"></div>
+        </div>
+
+        <section id="oeuvres" class="section">
+        <div class="oeuvres">
+            <div class="line"><hr></div>
+            <h2 class="section-title">Oeuvres</h2>
+            <div class="oeuvres-slider">
+                <div class="slides">
+                    <div class="slide">
+                        <div class="gallery-item">
+                            <img src="oeuvre7.png" alt="Autoportrait">
+                            <p class="nom">Autoportrait</p>
+                            <p class="artist">Rémi Fox</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="oeuvre8.png" alt="Urban Echoes">
+                            <p class="nom">Urban Echoes</p>
+                            <p class="artist">The Unseen</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="oeuvre9.png" alt="Intertwined Heart">
+                            <p class="nom">Intertwined Heart</p>
+                            <p class="artist">Oscar Leroux</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="gallery-item">
+                            <img src="oeuvre4.png" alt="Dissollusions">
+                            <p class="nom">Dissollusions</p>
+                            <p class="artist">Lena Chastel</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="oeuvre5.png" alt="Sunset">
+                            <p class="nom">Sunset</p>
+                            <p class="artist">Iva Lassen</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="oeuvre6.png" alt="C'est Théo">
+                            <p class="nom">C'est Théo</p>
+                            <p class="artist">Théo Goven</p>
+                        </div>
+                    </div>
+
+                    <div class="slide">
+                        <div class="gallery-item">
+                            <img src="oeuvre1.png" alt="Trois Sommets">
+                            <p class="nom">Trois Sommets</p>
+                            <p class="artist">Étienne Monparnasse</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="oeuvre2.png" alt="Émotion №4">
+                            <p class="nom">Émotion №4</p>
+                            <p class="artist">Lia Verden</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="oeuvre3.png" alt="Pause Sculptée">
+                            <p class="nom">Pause sculptée</p>
+                            <p class="artist">Oscar Leroux</p>
+                        </div>
+                    </div>
+
+                    <div class="dots">
+                        <span class="dot" onclick="currentOeuvresSlide(0)"></span>
+                        <span class="dot" onclick="currentOeuvresSlide(1)"></span>
+                        <span class="dot" onclick="currentOeuvresSlide(2)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section id="artistes" class="section">
+        <div class="artistes">
+            <div class="line1"><hr></div>
+            <h2 class="section-title">Artistes</h2>
+            <div class="artistes-slider">
+                <div class="slides">
+                    <div class="slide1">
+                        <div class="gallery-item">
+                            <img src="artiste1.png" alt="Rémi Fox">
+                            <p class="nom">Rémi Fox</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="artiste2.png" alt="The Unseen">
+                            <p class="nom">The Unseen</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="artiste3.png" alt="Iva Lassen">
+                            <p class="nom">Iva Lassen</p>
+                        </div>
+                    </div>
+
+                    <div class="slide1">
+                        <div class="gallery-item">
+                            <img src="artiste4.png" alt="Oscar Leroux">
+                            <p class="nom">Oscar Leroux</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="artiste5.png" alt="Lena Chastel">
+                            <p class="nom">Lena Chastel</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="artiste6.png" alt="Étienne Monparnasse">
+                            <p class="nom">Étienne Monparnasse</p>
+                        </div>
+                    </div>
+
+                    <div class="slide1">
+                        <div class="gallery-item">
+                            <img src="artiste7.png" alt="Lia Verden">
+                            <p class="nom">Lia Verden</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="artiste8.png" alt="Théo Goven">
+                            <p class="nom">Théo Goven</p>
+                        </div>
+                        <div class="gallery-item">
+                            <img src="artiste9.png" alt="Amélie Caron">
+                            <p class="nom">Amélie Caron</p>
+                        </div>
+                    </div>
+                    <div class="dots1">
+                        <span class="dot1" onclick="currentArtistesSlide(0)"></span>
+                        <span class="dot1" onclick="currentArtistesSlide(1)"></span>
+                        <span class="dot1" onclick="currentArtistesSlide(2)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <script src="site.js"></script>
+    </body>
+</html> 
