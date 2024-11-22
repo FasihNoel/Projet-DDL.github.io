@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Jomolhari&display=swap">
         <link href="https://fonts.googleapis.com/css2?family=Jomolhari&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
         <link rel="stylesheet" href="style.css" type="text/css">
     </head>
     
@@ -171,49 +172,66 @@
             </div>
         </div>
         </section>
-        <script src="site.js"></script>
-  <!-- Section Événements -->
-    <section class="evenements">
-        <h3>Événements à venir</h3>
-        <div class="events-gallery">
-            <div class="event">
-                <img src="path/to/event1.jpg" alt="Événement 1">
-                <p>Public Talk<br>29/11/2024 19:00-20:30</p>
+
+         <section class="instagram">
+            <img src="instagram.jpg" alt="Instagram">
+            <h3>DEDALGALLERY</h3>
+            <p>Suivez-nous sur notre Instagram</p>
+            <button>Suivre</button>
+        </section>
+        
+         <section class="evenements">
+            <h2 class="section-title">Événements à venir</h2>
+            <div class="events-gallery">
+                <div class="event">
+                    <img src="evenement1.jpg" alt="Événement 1">
+                    <p class="nom">Atelier de sculpture</p>
+                    <p class="time">07/12/2024 19:00-20:30</p>
+                </div>
+                <div class="event">
+                    <img src="evenement2.jpg" alt="Événement 2">
+                    <p class="nom">Performance chorégraphique</p>
+                    <p class="time">14/12/2024 19:00-20:30</p>
+                </div>
+                <div class="event">
+                    <img src="evenement3.jpg" alt="Événement 3">
+                    <p class="nom">Public Talk</p>
+                    <p class="time">21/12/2024 19:00-20:30</p>
+                </div>
             </div>
-            <div class="event">
-                <img src="path/to/event2.jpg" alt="Événement 2">
+        </section>
+
+        <section class="newsletter">
+            <p>Ne ratez pas nos futures expositions et événements</p>
+            <h3>ABONNEZ-VOUS À LA NEWSLETTER</h3>
+            <form>
+                <input type="email" placeholder="Entrez votre e-mail">
+                <button>S'inscrire</button>
+            </form>
+        </section>
+
+        <footer>
+            <div class="contact">
+                <p>CONTACT</p>
+                <p>+33 09 75 45 85 36</p>
+                <p>info.dedal@gmail.com</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Newsletter -->
-    <section class="newsletter">
-        <p>Ne ratez pas nos futures expositions et événements</p>
-        <h4>ABONNEZ-VOUS À LA NEWSLETTER</h4>
-        <form>
-            <input type="email" placeholder="Entrez votre e-mail">
-            <button>S'inscrire</button>
-        </form>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="contact">
-            <p>CONTACT</p>
-            <p>+33 09 75 45 85 36</p>
-            <p>info.dedal@gmail.com</p>
-        </div>
-        <div class="address">
-            <p>ADRESSE</p>
-            <p>10 rue de la République</p>
-            <p>75000 Paris</p>
-        </div>
-        <div class="hours">
-            <p>HORAIRES</p>
-            <p>Mardi-samedi : 10h-18h</p>
-            <p>Dimanche-lundi : fermé</p>
-        </div>
-    </footer>
-
+            <div class="address">
+                <p>ADRESSE</p>
+                <p>10 rue de la République</p>
+                <p>75000 Paris</p>
+            </div>
+            <div class="hours">
+                <p>HORAIRES</p>
+                <p>Mardi-samedi : 10h-18h</p>
+                <p>Dimanche-lundi : fermé</p>
+            </div>
+            <div class="icones">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-regular fa-envelope"></i>
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+        </footer>
+    <script src="site.js"></script>
 </body>
 </html>
