@@ -15,7 +15,7 @@
     <body>
         <header class="header">
             <div class="logo-container">
-                <img src="img/photo.logo.png" alt="Logo" class="logo">
+                <img src="photo.logo.png" alt="Logo" class="logo">
                 <h2 class="name">dedal des couleurs</h2>
             </div>
 
@@ -173,65 +173,92 @@
         </div>
         </section>
 
-         <section class="instagram">
-            <img src="instagram.jpg" alt="Instagram">
-            <h3>DEDALGALLERY</h3>
-            <p>Suivez-nous sur notre Instagram</p>
-            <button>Suivre</button>
-        </section>
-        
-         <section class="evenements">
-            <h2 class="section-title">Événements à venir</h2>
-            <div class="events-gallery">
-                <div class="event">
-                    <img src="evenement1.jpg" alt="Événement 1">
-                    <p class="nom">Atelier de sculpture</p>
-                    <p class="time">07/12/2024 19:00-20:30</p>
-                </div>
-                <div class="event">
-                    <img src="evenement2.jpg" alt="Événement 2">
-                    <p class="nom">Performance chorégraphique</p>
-                    <p class="time">14/12/2024 19:00-20:30</p>
-                </div>
-                <div class="event">
-                    <img src="evenement3.jpg" alt="Événement 3">
-                    <p class="nom">Public Talk</p>
-                    <p class="time">21/12/2024 19:00-20:30</p>
+        <section class="instagram">
+            <div class="inst-left">
+                <img src="instagram.jpg" alt="Instagram">
+                <div class="suivez-nous">
+                    <h3>DEDALGALLERY</h3>
+                    <p>Suivez-nous sur notre Instagram</p>
                 </div>
             </div>
+            <button class="suivre" onclick="window.open('https://www.instagram.com/dedalgallery/', '_blank');">Suivre</button>
+        </section>
+
+        <section id="évènements">
+        <div class="évènements">
+            <h2 class="section-title1">Événements à venir</h2>
+            <div class="events-gallery">
+                <div class="event-left">
+                    <div class="event">
+                        <img class="im1" src="evenement1.jpg" alt="Événement 1">
+                        <div class="overlay">
+                            <p class="nom1">Atelier de sculpture</p>
+                            <p class="time">07/12/2024 19:00-20:30</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-right">
+                    <div class="event">
+                        <img class="im2" src="evenement2.jpg" alt="Événement 2">
+                        <div class="overlay">
+                            <p class="nom1">Performance chorégraphique</p>
+                            <p class="time">14/12/2024 19:00-20:30</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <img class="im2" src="evenement3.jpg" alt="Événement 3">
+                        <div class="overlay">
+                            <p class="nom1">Public Talk</p>
+                            <p class="time">21/12/2024 19:00-20:30</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line2"><hr></div>
+        </div>
         </section>
 
         <section class="newsletter">
-            <p>Ne ratez pas nos futures expositions et événements</p>
-            <h3>ABONNEZ-VOUS À LA NEWSLETTER</h3>
+            <div class="abonnez">
+                <p>Ne ratez pas nos futures expositions et événements</p>
+                <h3>ABONNEZ-VOUS À LA NEWSLETTER</h3>
+            </div>
             <form>
                 <input type="email" placeholder="Entrez votre e-mail">
-                <button>S'inscrire</button>
+                <button type="reset">S'inscrire</button>
             </form>
         </section>
 
+        <section id="contact">
         <footer>
             <div class="contact">
-                <p>CONTACT</p>
+                <h4>CONTACT</h4>
                 <p>+33 09 75 45 85 36</p>
                 <p>info.dedal@gmail.com</p>
             </div>
             <div class="address">
-                <p>ADRESSE</p>
+                <h4>ADRESSE</h4>
                 <p>10 rue de la République</p>
                 <p>75000 Paris</p>
             </div>
             <div class="hours">
-                <p>HORAIRES</p>
+                <h4>HORAIRES</h4>
                 <p>Mardi-samedi : 10h-18h</p>
                 <p>Dimanche-lundi : fermé</p>
             </div>
             <div class="icones">
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-regular fa-envelope"></i>
-                <i class="fa-solid fa-location-dot"></i>
+                <a href="https://www.instagram.com/dedalgallery/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="mailto:info.dedal@gmail.com" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-regular fa-envelope"></i>
+                </a>
+                <a href="https://maps.app.goo.gl/1FjbkU4MmG5gAFeM8" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
             </div>
         </footer>
-    <script src="site.js"></script>
-</body>
-</html>
+        </section>
+        <script src="site.js"></script>
+    </body>
+</html> 
