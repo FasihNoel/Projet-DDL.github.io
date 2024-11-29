@@ -177,7 +177,7 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  background-image: url('/img/galerie.png'); 
+  background-image: url('galerie.png'); 
   background-size: cover; 
   background-position: center;
   box-sizing: border-box;
