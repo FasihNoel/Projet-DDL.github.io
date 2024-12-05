@@ -13,6 +13,7 @@
     margin: 0;
     padding: 0;
   }
+
   .header {
     width: 100%;
     max-width: 1440px;
@@ -43,7 +44,7 @@
     overflow: hidden;
   }
 
-  h1{
+  .h1{
     font-size: 33px;
     margin-left: 140px;
     font-weight: 400;
