@@ -1,0 +1,75 @@
+@import "siteweb.css";
+
+.histoire{
+    height: 820px;
+    display: flex;
+    gap: 132px;
+    align-items: flex-start;
+}
+  
+.histoire-photo{
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    gap: 14px;
+}
+
+.histoire-photo img{
+    width: 658px;
+    height: 320px;
+    object-fit: cover;
+    object-position: center 30%;
+}
+
+.histoire-texte{
+    flex-direction: column;
+    margin-top: 140px;
+}
+
+h2{
+    margin-bottom: 30px;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-family: 'Josefin Sans';
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+p{
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-family: 'Josefin Sans';
+    font-weight: 300;
+    letter-spacing: 0.1em;
+}
+
+.line3{
+    max-width: 1346px;
+    margin: 0 auto 0 auto;
+    background-color: #dbd8d0;
+    height: 1px;
+    border: none;
+    text-align: center;
+}
+
+.fondateur{
+    height: 700px;
+    display: flex;
+    align-items: center;
+    gap: 160px;
+    margin-left: 60px;
+}
+
+.dechewsky{
+    flex-direction: column;;
+}
+
+.dechewsky-photo{
+    display: flex;
+    flex-direction: column;
+}
+
+.dechewsky-photo img{
+    width: 728px;
+    height: 540px;
+}
