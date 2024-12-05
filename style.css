@@ -43,10 +43,9 @@
     overflow: hidden;
   }
 
-  .name {
-    font-size: clamp(28px, 2vw, 33px);
-    max-width: 464px;
-    margin-left: 151px;
+  h1{
+    font-size: 33px;
+    margin-left: 140px;
     font-weight: 400;
     letter-spacing: 0.1em;
     text-transform: uppercase;
