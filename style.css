@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
   }
 
-  .body{
+  body{
     max-width: 1440px;
     margin: 0;
     padding: 0;
@@ -602,3 +602,241 @@ footer h4{
 transform: scale(1.1);
 color: #DBD8D0;
 }
+
+
+/* Media Queries pour les écrans de taille maximale de 768px */
+@media only screen and (max-width: 768px) {
+
+    body {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 20px 0;
+    }
+
+    .logo-container {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        position: static;
+        max-width: 120px;
+        max-height: 90px;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .menu-container {
+        margin: 10px 0 0 0;
+    }
+
+    .menu-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .menu-list a {
+        font-size: 16px;
+    }
+
+    .propos-container {
+        flex-direction: column;
+    }
+
+    .frame1, .frame2 {
+        width: 100%;
+        max-width: 100%;
+        padding: 50px 20px;
+        height: auto;
+    }
+
+    .propos {
+        align-items: center;
+        text-align: center;
+    }
+
+    .ddc {
+        font-size: 20px;
+    }
+
+    .fondation {
+        font-size: 16px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .decouvrir {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .oeuvres-slider .gallery-item {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .oeuvres-slider .gallery-item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .section-title {
+        font-size: 28px;
+        margin: 40px 0 30px;
+    }
+
+    .artistes-slider .gallery-item {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .artistes-slider .gallery-item img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .oeuvres, .artistes {
+        height: auto;
+    }
+
+    /* Instagram Section */
+    .instagram {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .inst-left {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .instagram img {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .suivre {
+        width: 100%;
+        margin-left: 0; 
+        margin-top: 20px;
+        max-width: 250px;
+    }
+
+  }
+  
+
+    /* Évènements */
+    .évènements {
+        padding: 50px 20px;
+        height: auto;
+    }
+
+    .section-title1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .events-gallery {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .event-right {
+        margin-left: 0;
+    }
+
+    .im1, .im2 {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Overlay des événements */
+    .overlay {
+        height: auto;
+        padding: 10px;
+    }
+
+    .nom1 {
+        font-size: 20px;
+    }
+
+    .time {
+        font-size: 16px;
+    }
+
+    /* Newsletter */
+    .newsletter {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+    }
+
+    .abonnez {
+        align-items: center;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .newsletter form {
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        gap: 15px;
+    }
+
+    .newsletter input {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .newsletter button {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    footer > div {
+        margin-bottom: 20px;
+    }
+
+    .icones {
+        justify-content: center;
+    }
+
+    .icones i {
+        margin-top: 0;
+    }
+
+    .dots, .dots1 {
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+
+    .dot, .dot1 {
+        width: 10px;
+        height: 10px;
+    }
