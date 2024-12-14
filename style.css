@@ -10,7 +10,7 @@
 
   body{
     max-width: 1440px;
-    margin: 0;
+    margin: auto;
     padding: 0;
   }
 
@@ -39,14 +39,12 @@
     background-position: center center;
     background-size: cover;
     opacity: 1;
-    position: absolute;
     left: 6px;
     overflow: hidden;
   }
 
   h1{
     font-size: 30px;
-    margin-left: 140px;
     font-weight: 400;
     letter-spacing: 0.1em;
     text-transform: uppercase;
