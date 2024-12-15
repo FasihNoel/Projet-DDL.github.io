@@ -42,3 +42,21 @@ artistesDots.forEach((dot, index) => {
 });
 
 showArtistesSlide(currentArtistesIndex);
+
+document.addEventListener("DOMContentLoaded", function() {
+  const menuIcon = document.getElementById("menuIcon");
+  const menuList = document.getElementById("menuList");
+
+  menuIcon.addEventListener("click", function() {
+      menuList.classList.toggle("active");
+      menuIcon.classList.toggle("hidden"); 
+  });
+
+  menuList.addEventListener("click", function(event) {
+      if (event.target.tagName === "A") { 
+          menuList.classList.remove("active");
+          menuIcon.classList.remove("hidden"); 
+      }
+  });
+});
+
