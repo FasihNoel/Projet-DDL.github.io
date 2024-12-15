@@ -619,6 +619,10 @@ transform: scale(1.1);
 color: #DBD8D0;
 }
 
+.icon-text{
+  display: none;
+}
+
 
 /* Media Queries pour les écrans de taille maximale de 768px */
 @media only screen and (max-width: 768px) {
