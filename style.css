@@ -644,15 +644,38 @@ color: #DBD8D0;
     }
 
     .menu-list {
+        display: none;
         flex-direction: column;
-        align-items: center;
-        gap: 20px;
+        justify-content: space-between;
+        gap: 15px;
     }
 
+    .menu-list.active{
+    display: flex;
+  }
+    
     .menu-list a {
         font-size: 16px;
     }
 
+    .menu-list li{
+    text-align: center;
+  }
+
+  .menu-list li:hover::after {
+    height: 3px; 
+    }
+
+    .burger{
+    display: block;
+    transition: transform 0.3s ease, margin-left 0.3s ease;
+  }
+
+  .burger.hidden{
+   opacity: 0;
+   margin-left: -50px;
+  }
+    
     .propos-container {
         flex-direction: column;
         align-items: center;
