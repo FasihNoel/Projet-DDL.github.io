@@ -681,6 +681,7 @@ color: #DBD8D0;
     .burger{
     display: block;
     transition: transform 0.3s ease, margin-left 0.3s ease;
+    cursor: pointer;
   }
 
   .burger.hidden{
