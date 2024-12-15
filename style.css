@@ -18,7 +18,7 @@
     width: 100%;
     max-width: 1440px;
     height: 150px;
-    background: #dbd8d0;
+    background: #D9D9D9;
     opacity: 1;
     display: flex;
     align-items: center;
@@ -157,7 +157,7 @@
   width: 207px;
   height: 50px;
   padding: 12px 24px;
-  background-color: #dbd8d0;
+  background-color: #D9D9D9;
   border: none;
   text-align: center;
   color: #000000;
