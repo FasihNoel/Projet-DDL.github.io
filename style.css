@@ -745,34 +745,42 @@ color: #DBD8D0;
       margin-top: 5px;
     }
 
-    .oeuvres-slider .gallery-item {
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .oeuvres-slider .gallery-item img {
-        max-width: 100%;
-        height: auto;
-    }
-
     .section-title {
         font-size: 28px;
         margin: 40px 0 30px;
     }
 
-    .artistes-slider .gallery-item {
-        width: 100%;
-        max-width: 100%;
-    }
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+  }
 
-    .artistes-slider .gallery-item img {
-        max-width: 100%;
-        height: auto;
-    }
+  .slide, .slide1{
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    width: 100%;
+  }
 
-    .oeuvres, .artistes {
-        height: auto;
-    }
+  .slide1{
+    gap: 40px;
+  }
+
+  .dot, .dot1 {
+    width: 12px;
+    height: 12px;
+}
+
+.oeuvres, .artistes{
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.line, .line1{
+  width: 90%;
+  height: 1.5px;
+  align-items: center;
+}  
 
     /* Instagram Section */
     .instagram {
@@ -809,6 +817,10 @@ color: #DBD8D0;
         height: auto;
     }
 
+    .line2{
+    display: none;
+  }
+    
     .section-title1 {
         font-size: 28px;
         margin-bottom: 30px;
@@ -894,19 +906,5 @@ color: #DBD8D0;
     .icones i {
         margin-top: 15px;
     }
-
-    .dots, .dots1 {
-        flex-direction: row;
-        justify-content: center;
-        margin-top: 20px;
-        right: 50%;
-        transform: translateX(50%);
-    }
-
-    .dot, .dot1 {
-        width: 10px;
-        height: 10px;
-    }
-
   }
   
