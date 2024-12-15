@@ -47,13 +47,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const menuIcon = document.getElementById("menuIcon");
     const menuList = document.getElementById("menuList");
 
-    // Проверка на наличие элементов
+    // Проверка на существование элементов
     if (menuIcon && menuList) {
 
         // Открытие/закрытие меню при клике на бургер
         menuIcon.addEventListener("click", function() {
-            menuList.classList.toggle("active"); // Открытие/закрытие меню
-            menuIcon.classList.toggle("hidden"); // Скрытие/показ иконки
+            menuList.classList.toggle("active");  // Открыть/закрыть меню
+            menuIcon.classList.toggle("hidden"); // Скрыть/показать иконку
         });
 
         // Закрытие меню при клике на ссылку в меню
@@ -63,22 +63,5 @@ document.addEventListener("DOMContentLoaded", function() {
                 menuIcon.classList.remove("hidden"); // Показ иконки
             }
         });
-
-        // Дополнительная логика для page2.html
-        if (window.location.pathname.includes("page2.html")) {
-            menuList.addEventListener("click", function(event) {
-                if (event.target.tagName === "A") {
-                    event.preventDefault(); // Предотвращаем переход сразу
-
-                    menuList.classList.remove("active"); // Закрываем меню
-                    menuIcon.classList.remove("hidden"); // Показ иконки
-
-                    // Переход по ссылке через задержку после закрытия меню
-                    setTimeout(function() {
-                        window.location.href = event.target.href; // Переход по ссылке
-                    }, 300); // Задержка для плавного закрытия меню
-                }
-            });
-        }
     }
 });
