@@ -99,13 +99,18 @@ p{
         padding-top: 50px; 
     }
 
-
     .histoire-photo, .dechewsky-photo {
         max-width: 100%;
         margin-left: 0; 
     }
 
-    .histoire-texte, .dechewsky {
+    .histoire-texte {
+        max-width: 100%; 
+        margin-left: 12px; 
+        text-align: left; 
+    }
+    
+    .dechewsky {
         max-width: 100%;
         margin-left: 0; 
         text-align: left;
