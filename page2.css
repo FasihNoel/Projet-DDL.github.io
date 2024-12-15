@@ -1,10 +1,11 @@
 @import "style.css";
 
 .histoire{
-   display: flex;
+    display: flex;
     flex-direction: row; 
-    justify-content: space-between; 
-    align-items: flex-start; 
+    justify-content: flex-start; 
+    gap: 60px;
+    align-items: center; 
     flex-wrap: wrap; 
     margin: 0 auto;
     max-width: 1440px; 
@@ -19,15 +20,16 @@
 }
 
 .histoire-photo img{
-     width: 100%; 
+    width: 100%; 
     height: auto;
     object-fit: cover;
 }
 
-.histoire-texte{
-    max-width: 45%; 
+.histoire-texte, .dechewsky{
+    max-width: 40%; 
     text-align: left;
     font-family: 'Josefin Sans';
+    line-height: 1.5;
 }
 
 h2{
@@ -46,7 +48,7 @@ p{
 }
 
 .line3{
-    max-width: 1346px;
+    max-width: 90%;
     margin: 0 auto 0 auto;
     background-color: #dbd8d0;
     height: 1px;
@@ -55,11 +57,15 @@ p{
 }
 
 .fondateur{
-    height: 700px;
-    display: flex;
-    align-items: center;
-    gap: 160px;
-    margin-left: 60px;
+display: flex;
+    flex-direction: row; 
+    justify-content: flex-start; 
+    gap: 60px;
+    align-items: center; 
+    flex-wrap: wrap; 
+    margin: 0 auto;
+    max-width: 1440px; 
+    padding-top: 90px;
 }
 
 .dechewsky{
