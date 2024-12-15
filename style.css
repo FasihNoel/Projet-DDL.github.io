@@ -8,21 +8,6 @@
     scroll-behavior: smooth;
   }
 
-@font-face {
-    font-family: 'Jomolhari';
-    src: url('fonts/Jomolhari.woff2') format('woff2'),
-         url('fonts/Jomolhari.woff') format('woff');
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Josefin Sans';
-    src: url('fonts/JosefinSans-Regular.woff2') format('woff2'),
-         url('fonts/JosefinSans-Regular.woff') format('woff');
-    font-display: swap;
-}
-
-
   body{
     max-width: 1440px;
     margin: auto;
