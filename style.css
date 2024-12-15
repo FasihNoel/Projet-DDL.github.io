@@ -636,6 +636,10 @@ color: #DBD8D0;
   display: none;
 }
 
+.fa-beat, .fa-spin, .fa-flip {
+    animation: none !important;
+}
+
 
 /* Media Queries pour les écrans de taille maximale de 768px */
 @media only screen and (max-width: 768px) {
