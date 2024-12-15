@@ -44,19 +44,38 @@ artistesDots.forEach((dot, index) => {
 showArtistesSlide(currentArtistesIndex);
 
 document.addEventListener("DOMContentLoaded", function() {
-  const menuIcon = document.getElementById("menuIcon");
-  const menuList = document.getElementById("menuList");
+    const menuIcon = document.getElementById("menuIcon");
+    const menuList = document.getElementById("menuList");
 
-  menuIcon.addEventListener("click", function() {
-      menuList.classList.toggle("active");
-      menuIcon.classList.toggle("hidden"); 
-  });
+    // Открытие и закрытие меню при клике на иконку
+    menuIcon.addEventListener("click", function() {
+        menuList.classList.toggle("active");
+        menuIcon.classList.toggle("hidden");
+    });
 
-  menuList.addEventListener("click", function(event) {
-      if (event.target.tagName === "A") { 
-          menuList.classList.remove("active");
-          menuIcon.classList.remove("hidden"); 
-      }
-  });
+    // Закрытие меню при клике по ссылке в меню
+    menuList.addEventListener("click", function(event) {
+        if (event.target.tagName === "A") {
+            menuList.classList.remove("active");
+            menuIcon.classList.remove("hidden");
+        }
+    });
+
+    // Для второй страницы предотвратить переход по ссылке сразу
+    if (window.location.pathname.includes("about.html")) {
+        menuList.addEventListener("click", function(event) {
+            if (event.target.tagName === "A") {
+                event.preventDefault();  // Останавливаем переход по ссылке
+                menuList.classList.remove("active");  // Закрываем меню
+                menuIcon.classList.remove("hidden");  // Показать иконку
+
+                // Переходим по ссылке после закрытия меню
+                setTimeout(function() {
+                    window.location.href = event.target.href;
+                }, 300); // Немного задержим, чтобы закрытие меню успело произойти
+            }
+        });
+    }
 });
+
 
