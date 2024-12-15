@@ -391,10 +391,10 @@
 }
 
 .instagram p{
-  font-size: 20px;
+  font-size: 18px;
   color: #ffffff;
   letter-spacing: 0.1em;
-  font-weight: 400;
+  font-weight: 300;
   margin: 5px 0 0;
 }
 
@@ -565,7 +565,7 @@ opacity: 75%;
   border: none; 
   font-size: 20px; 
   font-family: 'Jomolhari', serif;
-  font-weight: 300;
+  font-weight: 400;
   letter-spacing: 0.1em;
   cursor: pointer;  
   text-align: center;
