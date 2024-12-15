@@ -1,36 +1,39 @@
 @import "style.css";
 
 .histoire{
-    height: 820px;
-    display: flex;
-    gap: 132px;
-    align-items: flex-start;
+   display: flex;
+    flex-direction: row; 
+    justify-content: space-between; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+    margin: 0 auto;
+    max-width: 1440px; 
+    padding-top: 90px;
 }
   
 .histoire-photo{
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
     gap: 14px;
+    max-width: 50%; 
 }
 
 .histoire-photo img{
-    width: 658px;
-    height: 320px;
+     width: 100%; 
+    height: auto;
     object-fit: cover;
-    object-position: center 30%;
 }
 
 .histoire-texte{
-    flex-direction: column;
-    margin-top: 140px;
+    max-width: 45%; 
+    text-align: left;
+    font-family: 'Josefin Sans';
 }
 
 h2{
     margin-bottom: 30px;
     font-size: 26px;
     text-transform: uppercase;
-    font-family: 'Josefin Sans';
     font-weight: 600;
     letter-spacing: 0.1em;
 }
@@ -38,7 +41,6 @@ h2{
 p{
     margin-bottom: 15px;
     font-size: 22px;
-    font-family: 'Josefin Sans';
     font-weight: 300;
     letter-spacing: 0.1em;
 }
