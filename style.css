@@ -893,6 +893,17 @@ color: #DBD8D0;
         max-width: 250px;
     }
 
+    .email-label{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+    }
+    
     /* Footer */
     footer {
         flex-direction: column;
