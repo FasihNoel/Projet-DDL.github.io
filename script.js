@@ -44,24 +44,18 @@ artistesDots.forEach((dot, index) => {
 showArtistesSlide(currentArtistesIndex);
 
 document.addEventListener("DOMContentLoaded", function() {
-    const menuIcon = document.getElementById("menuIcon");
-    const menuList = document.getElementById("menuList");
+  const menuIcon = document.getElementById("menuIcon");
+  const menuList = document.getElementById("menuList");
 
-    // Проверка на существование элементов
-    if (menuIcon && menuList) {
+  menuIcon.addEventListener("click", function() {
+      menuList.classList.toggle("active");
+      menuIcon.classList.toggle("hidden");
+  });
 
-        // Открытие/закрытие меню при клике на бургер
-        menuIcon.addEventListener("click", function() {
-            menuList.classList.toggle("active");  // Открыть/закрыть меню
-            menuIcon.classList.toggle("hidden"); // Скрыть/показать иконку
-        });
-
-        // Закрытие меню при клике на ссылку в меню
-        menuList.addEventListener("click", function(event) {
-            if (event.target.tagName === "A") {
-                menuList.classList.remove("active"); // Закрытие меню
-                menuIcon.classList.remove("hidden"); // Показ иконки
-            }
-        });
-    }
+  menuList.addEventListener("click", function(event) {
+      if (event.target.tagName === "A") {
+          menuList.classList.remove("active");
+          menuIcon.classList.remove("hidden"); 
+      }
+  });
 });
