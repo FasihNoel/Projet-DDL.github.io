@@ -18,7 +18,7 @@
     width: 100%;
     max-width: 1440px;
     height: 150px;
-    background: #D9D9D9;
+    background: #dbd8d0;
     opacity: 1;
     display: flex;
     align-items: center;
@@ -157,7 +157,7 @@
   width: 207px;
   height: 50px;
   padding: 12px 24px;
-  background-color: #D9D9D9;
+  background-color: #dbd8d0;
   border: none;
   text-align: center;
   color: #000000;
@@ -364,7 +364,7 @@
 
 .instagram{
   height: 191px;
-  background-color: #979692;
+  background-color: #8A8A84;
   display: flex;
   align-items: center;
   padding: 0 170px;
@@ -828,7 +828,7 @@ color: #DBD8D0;
     .section-title1 {
         font-size: 28px;
         margin-bottom: 30px;
-        text-align: left;
+        text-align: center;
     }
 
     .events-gallery {
@@ -853,7 +853,6 @@ color: #DBD8D0;
 
     .nom1 {
         font-size: 19px;
-        text-wrap: nowrap;
     }
 
     .time {
