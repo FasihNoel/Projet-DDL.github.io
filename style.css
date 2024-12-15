@@ -65,6 +65,12 @@
     margin-right: 40px;
   }
 
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
  .menu-list li{
   position: relative;
  }
@@ -88,6 +94,12 @@
   transition: height 0.3s ease;
   height: 3.5px;
  }
+
+.burger {
+  display: none;
+  font-size: 25px;
+  cursor: pointer;
+}
 
 .propos-container{
   width: 100%;
