@@ -47,35 +47,38 @@ document.addEventListener("DOMContentLoaded", function() {
     const menuIcon = document.getElementById("menuIcon");
     const menuList = document.getElementById("menuList");
 
-    // Открытие и закрытие меню при клике на иконку
-    menuIcon.addEventListener("click", function() {
-        menuList.classList.toggle("active");
-        menuIcon.classList.toggle("hidden");
-    });
+    // Проверка на наличие элементов
+    if (menuIcon && menuList) {
 
-    // Закрытие меню при клике по ссылке в меню
-    menuList.addEventListener("click", function(event) {
-        if (event.target.tagName === "A") {
-            menuList.classList.remove("active");
-            menuIcon.classList.remove("hidden");
-        }
-    });
+        // Открытие/закрытие меню при клике на бургер
+        menuIcon.addEventListener("click", function() {
+            menuList.classList.toggle("active"); // Открытие/закрытие меню
+            menuIcon.classList.toggle("hidden"); // Скрытие/показ иконки
+        });
 
-    // Для второй страницы предотвратить переход по ссылке сразу
-    if (window.location.pathname.includes("about.html")) {
+        // Закрытие меню при клике на ссылку в меню
         menuList.addEventListener("click", function(event) {
             if (event.target.tagName === "A") {
-                event.preventDefault();  // Останавливаем переход по ссылке
-                menuList.classList.remove("active");  // Закрываем меню
-                menuIcon.classList.remove("hidden");  // Показать иконку
-
-                // Переходим по ссылке после закрытия меню
-                setTimeout(function() {
-                    window.location.href = event.target.href;
-                }, 300); // Немного задержим, чтобы закрытие меню успело произойти
+                menuList.classList.remove("active"); // Закрытие меню
+                menuIcon.classList.remove("hidden"); // Показ иконки
             }
         });
+
+        // Дополнительная логика для page2.html
+        if (window.location.pathname.includes("page2.html")) {
+            menuList.addEventListener("click", function(event) {
+                if (event.target.tagName === "A") {
+                    event.preventDefault(); // Предотвращаем переход сразу
+
+                    menuList.classList.remove("active"); // Закрываем меню
+                    menuIcon.classList.remove("hidden"); // Показ иконки
+
+                    // Переход по ссылке через задержку после закрытия меню
+                    setTimeout(function() {
+                        window.location.href = event.target.href; // Переход по ссылке
+                    }, 300); // Задержка для плавного закрытия меню
+                }
+            });
+        }
     }
 });
-
-
