@@ -422,6 +422,7 @@
   border: #dbd8d0 3.5px solid;
   transform: scale(1.1);
  }
+
  .évènements {
   max-width: 1440px;
   font-family: 'Josefin Sans';
@@ -451,18 +452,19 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-left: 50px;
-  
+  margin-left: 60px;
+width: 100%;
 }
 
  .im1{
-  width: 477px;
+  width: 500px;
   height: 446px;
   object-fit: cover;
  }
 
  .im2{
-  width: 600px;
+  max-width: 710px;
+  width: 100%;
   height: 209px;
   object-fit: cover;
   object-position: center 25%;
@@ -696,13 +698,10 @@ color: #DBD8D0;
 
     .burger{
     display: block;
-    transition: transform 0.3s ease, margin-left 0.3s ease;
-    cursor: pointer;
   }
 
   .burger.hidden{
-   opacity: 0;
-   margin-left: -45px;
+    display: none;
   }
     
     .propos-container {
